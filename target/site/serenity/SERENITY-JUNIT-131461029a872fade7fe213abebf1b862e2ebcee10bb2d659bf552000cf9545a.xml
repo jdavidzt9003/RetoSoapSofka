@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="1" name="Busque un nombre de idioma basado en el código de idioma ISO" skipped="0" tests="2" time="4.7" timestamp="2021-10-21 11:40:01"><testcase name="Buscar el nombre de idioma con el código iso"/><testcase name="Validar mensaje de código ISO no encontrado"><failure message="&#10;Expected: a string containing &quot;&lt;m:LanguageNameResult&gt;Language ISOS Code not found!&lt;/m:LanguageNameResult&gt;&quot;&#10;     but: was &quot;&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;&#13;&#10;&lt;soap:Envelope xmlns:soap=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot;&gt;&#13;&#10;  &lt;soap:Body&gt;&#13;&#10;    &lt;m:LanguageNameResponse xmlns:m=&quot;http://www.oorsprong.org/websamples.countryinfo&quot;&gt;&#13;&#10;      &lt;m:LanguageNameResult&gt;Language ISO Code not found!&lt;/m:LanguageNameResult&gt;&#13;&#10;    &lt;/m:LanguageNameResponse&gt;&#13;&#10;  &lt;/soap:Body&gt;&#13;&#10;&lt;/soap:Envelope&gt;&quot;" type="java.lang.AssertionError">
+Expected: a string containing "&lt;m:LanguageNameResult&gt;Language ISOS Code not found!&lt;/m:LanguageNameResult&gt;"
+     but: was "&lt;?xml version="1.0" encoding="utf-8"?&gt;&#13;
+&lt;soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"&gt;&#13;
+  &lt;soap:Body&gt;&#13;
+    &lt;m:LanguageNameResponse xmlns:m="http://www.oorsprong.org/websamples.countryinfo"&gt;&#13;
+      &lt;m:LanguageNameResult&gt;Language ISO Code not found!&lt;/m:LanguageNameResult&gt;&#13;
+    &lt;/m:LanguageNameResponse&gt;&#13;
+  &lt;/soap:Body&gt;&#13;
+&lt;/soap:Envelope&gt;"</failure><system-err>
+Expected: a string containing "&lt;m:LanguageNameResult&gt;Language ISOS Code not found!&lt;/m:LanguageNameResult&gt;"
+     but: was "&lt;?xml version="1.0" encoding="utf-8"?&gt;&#13;
+&lt;soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"&gt;&#13;
+  &lt;soap:Body&gt;&#13;
+    &lt;m:LanguageNameResponse xmlns:m="http://www.oorsprong.org/websamples.countryinfo"&gt;&#13;
+      &lt;m:LanguageNameResult&gt;Language ISO Code not found!&lt;/m:LanguageNameResult&gt;&#13;
+    &lt;/m:LanguageNameResponse&gt;&#13;
+  &lt;/soap:Body&gt;&#13;
+&lt;/soap:Envelope&gt;"&#13;
+co.com.sofka.stepdefinitions.soap.countryinformation.languagename.LanguageNameStepDefinition.elServicioLanguageNameArrojaElMensajeDeCodigoNoEncontrado(LanguageNameStepDefinition.java:73)&#13;
+✽.el servicio Language Name arroja el mensaje de código no encontrado "Language ISO Code not found!"(file:///E:/Projects/RetoSoapSofka/src/test/resources/features/soap/countryinformation/languagename/LanguageName.feature:14)&#13;
+</system-err></testcase></testsuite>
