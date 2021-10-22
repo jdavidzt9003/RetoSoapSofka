@@ -18,7 +18,7 @@ public class LanguageNameStepDefinition extends SetUp {
 
     private static final String LANGUAGE_NAME_XML = System.getProperty("user.dir") + "\\src\\test\\resources\\countryinformation\\LanguageName.xml";
     private static final String S_ISO_CODE = "[sISOCode]";
-    String msjNotFound = "Language ISOS Code not found!";
+    String MSJ_NOT_FOUND = "Language ISOS Code not found!";
 
     @Given("que el automatizador ingresa un código iso {string}")
     public void queElAutomatizadorIngresaUnCódigoIso(String isoCode) {
@@ -77,12 +77,15 @@ public class LanguageNameStepDefinition extends SetUp {
                 seeThat(
                         "El mensaje del servicio no encontrado es: ",
                         new LanguageNameQuestion(fromLastResponseBy(actor)),
-                        containsString("<m:LanguageNameResult>" + msjNotFound + "</m:LanguageNameResult>")
+                        containsString("<m:LanguageNameResult>" + MSJ_NOT_FOUND + "</m:LanguageNameResult>")
                 )
         );
+
     }
+
     private String defineBodyRequest(String sISOCode) {
         return readFile(LANGUAGE_NAME_XML)
-                .replace(S_ISO_CODE, sISOCode.toString());
-}
+                .replace(S_ISO_CODE, sISOCode);
+
+    }
 }
